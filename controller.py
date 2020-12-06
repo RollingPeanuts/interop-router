@@ -35,7 +35,7 @@ class MacLearningController(Thread):
 		self.arpQueue = {}
 
 		# PWOPSF Router Metadata
-		self.routerId = routerId;
+		self.routerId = routerId
 		self.areaId = areaId
 		self.lsuint = 60; # 60 seconds between each link status update broadcast
 		self.mask = '255.255.255.0'

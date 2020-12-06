@@ -52,7 +52,7 @@ class MyRouter(P4RuntimeSwitch):
     def start(self, controllers):
         super(MyRouter, self).start(controllers)
         self.initTable()
-        self.controller = MyRouter(self, **self.ctrl_args)
+        self.controller = MacLearningController(self, **self.ctrl_args)
         self.controller.start()
     
     def stop(self):
